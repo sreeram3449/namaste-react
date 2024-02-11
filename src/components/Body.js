@@ -3,18 +3,12 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { GET_RESTAURANTS_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [restaurants, setRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
-
-  const topRestaurants = (filteredRestaurants) => {
-    let filteredRes = filteredRestaurants.filter(
-      (res) => res.info.avgRating > 4.2
-    );
-    setFilteredRestaurants(filteredRes);
-  };
 
   useEffect(() => {
     fetchData();
@@ -32,6 +26,11 @@ const Body = () => {
         ?.restaurants
     );
   };
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false)
+    return <h1>Your Internet is little Wonky, Please check your connection</h1>;
 
   return restaurants.length === 0 ? (
     <Shimmer />
@@ -59,7 +58,12 @@ const Body = () => {
         </div>
         <button
           className="filter-btn"
-          onClick={() => topRestaurants(filteredRestaurants)}
+          onClick={() => {
+            let filteredRes = filteredRestaurants.filter(
+              (res) => res.info.avgRating > 4.2
+            );
+            setFilteredRestaurants(filteredRes);
+          }}
         >
           Top Rated Restaurants
         </button>
