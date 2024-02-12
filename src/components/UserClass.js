@@ -37,7 +37,7 @@ class UserClass extends React.Component {
     const { name, location } = this.props;
 
     return (
-      <div>
+      <div className="m-4 p-4 bg-gray-200 rounded-lg">
         <h1>Class Component</h1>
         <h2>Name: {this.state.userInfo.name}</h2>
         <h3>Location: {this.state.userInfo.location}</h3>
