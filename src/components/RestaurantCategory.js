@@ -4,7 +4,6 @@ import { useState } from "react";
 const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
   const [showFlag, setShowFlag] = useState(showItems);
   const handleClick = () => {
-    setShowFlag(!showFlag);
     setShowIndex();
   };
 
@@ -21,7 +20,7 @@ const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
           <span>▼</span>
         </div>
 
-        {showFlag && <CategoryItems items={data?.itemCards} />}
+        {showItems && <CategoryItems items={data?.itemCards} />}
       </div>
     </div>
   );
