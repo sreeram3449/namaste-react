@@ -1,0 +1,97 @@
+{
+    "info": {
+        "id": "607431",
+        "name": "Samosa Party",
+        "cloudinaryImageId": "ahwtmr2oa0xwaujup9wp",
+        "locality": "Koramangala",
+        "areaName": "Koramangala",
+        "costForTwo": "₹150 for two",
+        "cuisines": [
+            "Fast Food",
+            "Snacks",
+            "Beverages",
+            "Chaat",
+            "North Indian",
+            "Street Food",
+            "Sweets",
+            "Desserts",
+            "Punjabi",
+            "Bakery"
+        ],
+        "avgRating": 4.3,
+        "parentId": "6364",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "100+",
+        "sla": {
+            "deliveryTime": 29,
+            "lastMileTravel": 1.6,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "1.6 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-02-14 23:00:00",
+            "opened": true
+        },
+        "badges": {
+            "textExtendedBadges": [
+                {
+                    "iconId": "guiltfree/GF_Logo_android_3x",
+                    "shortDescription": "options available",
+                    "fontColor": "#7E808C"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "",
+                                "fontColor": "#7E808C",
+                                "iconId": "guiltfree/GF_Logo_android_3x",
+                                "shortDescription": "options available"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "60% OFF",
+            "subHeader": "UPTO ₹120"
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+        "context": "seo-data-16116db2-02f6-4fab-88ab-a916378c1ece"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/samosa-party-koramangala-bangalore-607431",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}

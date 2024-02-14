@@ -13,7 +13,8 @@ const CategoryItems = ({ items }) => {
     <div>
       {items.map((item) => (
         <div
-          key={item?.car?.info?.id}
+          key={item.card.info.id}
+          data-testid="foodItems"
           className="p-2 m-2 border-gray-400 border-b-2 text-left flex"
         >
           <div className="w-9/12">

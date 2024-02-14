@@ -23,11 +23,11 @@ const Body = () => {
     const data = await fetch(GET_RESTAURANTS_URL);
     const jsonObj = await data.json();
     setRestaurants(
-      jsonObj?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+      jsonObj?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
     setFilteredRestaurants(
-      jsonObj?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+      jsonObj?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
   };
@@ -45,6 +45,7 @@ const Body = () => {
         <div className="m-4 p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className="border border-solid border-black h-9 w-56 rounded-md"
             placeholder="Type here..."
             value={searchText}
